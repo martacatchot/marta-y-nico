@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Marta & Nico · 16.10.2027</title>
+<meta name="description" content="Marta & Nico · 16 de octubre de 2027 · Binissaida, Menorca">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header">
+  <a class="logo" href="#inicio">M <span>|</span> N</a>
+  <nav class="nav" aria-label="Navegación">
+    <a href="#dia">EL GRAN DÍA</a><a href="#lugar">EL LUGAR</a><a href="#info">INFORMACIÓN ÚTIL</a><a href="#rsvp">CONFIRMAR ASISTENCIA</a>
+  </nav>
+  <button class="hamb" aria-label="Abrir menú" aria-expanded="false">☰</button>
+</header>
+<main>
+<section class="hero" id="inicio">
+  <img class="hero-image" src="assets/hero-final.png" alt="Ilustración de Sant Joan de Binissaida, con Marta & Nico y la fecha de la boda">
+  <div class="hero-countdown" aria-live="polite">
+    <div class="countdown-title">FALTAN</div>
+    <div class="countdown-grid"><div><strong id="days">—</strong><span>DÍAS</span></div><div><strong id="hours">—</strong><span>HORAS</span></div><div><strong id="minutes">—</strong><span>MINUTOS</span></div><div><strong id="seconds">—</strong><span>SEGUNDOS</span></div></div>
+  </div>
+  <a class="scroll" href="#dia">DESLIZA PARA DESCUBRIR <span>↓</span></a>
+</section>
+<section class="section" id="dia"><div class="heading"><small>01</small><h2>El gran día</h2><p>Un día para celebrar, disfrutar y estar juntos.</p></div>
+<div class="timeline"><div><time>13:00</time><b>Ceremonia</b></div><div><time>14:00</time><b>Comida</b><span class="timeline-note">Estaciones para disfrutar sin prisas</span></div><div><time>Después</time><b>Fiesta</b><span class="timeline-note">Hasta que el cuerpo aguante</span></div><div><time>23:00</time><b>Hasta aquí nos dejan bailar</b></div></div></section>
+<section class="section place" id="lugar"><div class="heading"><small>02</small><h2>El lugar</h2><p>Binissaida · Menorca</p></div><div class="place-card"><p>Un rincón de Menorca que hemos elegido para compartir este día con vosotros.</p><a href="https://binissaida.com/" target="_blank" rel="noopener">DESCUBRE BINISSAIDA ↗</a></div></section>
+<section class="section" id="info"><div class="heading"><small>03</small><h2>Información útil</h2></div><div class="cards"><article><small>01</small><h3>Venid guapísimos</h3><p>Queremos veros bien guapos y preparados para celebrar. Elegantes, cómodos y vosotros mismos.</p><p><strong>Eso sí: evitad todos los tonos de blanco.</strong> 🤍</p></article><article><small>02</small><h3>Vuestro mejor regalo</h3><p>El mejor regalo es compartir este día con vosotros.</p><p>Pero si queréis hacernos un detalle, aceptamos billetitos o transferencia.</p><div class="bank"><span>Marta</span><b>ES43 0182 5326 0602 0194 2701</b><span>Nico</span><b>ES98 2100 0840 4102 0117 7812</b></div></article></div></section>
+<section class="section rsvp" id="rsvp"><div class="rsvp-box"><div class="heading"><small>04</small><h2>¿Nos acompañas?</h2><p>Nos hace muchísima ilusión compartir este día contigo.</p></div>
+<form action="https://formsubmit.co/martacatchot@gmail.com" method="POST"><input type="hidden" name="_subject" value="💌 Nueva confirmación · Marta & Nico"><input type="hidden" name="_captcha" value="false"><input type="hidden" name="_cc" value="nicotvidal19@gmail.com"><input type="hidden" name="_template" value="table"><input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+<label>Nombre y apellidos<input name="Nombre" type="text" autocomplete="name" placeholder="Escribe tu nombre..." required></label>
+<fieldset><legend>¿Podrás acompañarnos?</legend><label class="choice"><input type="radio" name="Asistencia" value="Sí, allí estaré" required> Sí, allí estaré</label><label class="choice"><input type="radio" name="Asistencia" value="No podré acompañaros"> No podré acompañarnos</label></fieldset>
+<div id="special" hidden><label>¿Tienes alguna intolerancia o necesitas un menú especial?<textarea name="Intolerancias o menú especial" rows="4" placeholder="Cuéntanoslo aquí..."></textarea></label></div>
+<button type="submit">CONFIRMAR ASISTENCIA</button></form></div></section>
+</main>
+<footer><strong>Marta & Nico</strong><span>16 · 10 · 2027</span><a href="#inicio">↑</a></footer>
+<script src="script.js"></script>
+</body></html>
