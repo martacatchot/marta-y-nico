@@ -23,3 +23,9 @@ document.querySelectorAll('.copy-iban').forEach(button=>button.addEventListener(
   const note=button.closest('.gift-card')?.querySelector('.copy-note');
   try{await navigator.clipboard.writeText(iban);if(note)note.textContent='IBAN COPIADO ✓';button.textContent='COPIADO';setTimeout(()=>{button.textContent='COPIAR';if(note)note.textContent='';},1800);}catch(e){if(note)note.textContent='Puedes seleccionar y copiar el IBAN manualmente.';}
 }));
+
+// Show the acknowledgement only after FormSubmit redirects back.
+if(new URLSearchParams(window.location.search).get("rsvp")==="enviado") {
+ const thanks=document.getElementById("rsvp-success"); if(thanks){thanks.hidden=false; thanks.scrollIntoView({block:"center"});}
+ window.history.replaceState(null,"",window.location.pathname+"#rsvp");
+}

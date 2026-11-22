@@ -14,3 +14,6 @@ Versión 1.2 · Apartado de alojamiento Royal Life.
 - Diseño responsive.
 
 Web: https://martacatchot.github.io/marta-y-nico/
+
+
+Versión 1.8: la redirección de FormSubmit vuelve a la página principal con aviso de agradecimiento; evita depender de gracias.html. Comprobar activación del email y recepción real con un envío de prueba tras publicar.
