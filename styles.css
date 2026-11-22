@@ -53,3 +53,52 @@
 .dance-art{width:43px;height:43px;stroke-width:1.45}
 .night-art{width:38px;height:38px;stroke-width:1.45}
 @media(max-width:800px){.timeline-art{width:36px;height:36px}.dance-art{width:40px;height:40px}}
+
+/* v1.7 — Ajustes específicos para pantallas móviles */
+@media (max-width: 800px) {
+  html { scroll-padding-top: 82px; }
+  body { overflow-x: hidden; }
+  .section { padding: 82px 6vw; }
+  .heading { margin-bottom: 42px; }
+  .heading h2 { font-size: clamp(43px, 10vw, 60px); line-height: 1.04; }
+  .day-section .heading { margin-bottom: 42px; }
+  .timeline { width: 100%; max-width: 560px; padding: 0; }
+  .timeline::before { display: none; }
+  .timeline-item {
+    display: grid;
+    grid-template-columns: 58px minmax(0, 1fr);
+    grid-template-areas: 'icon time' 'content content';
+    column-gap: 18px;
+    row-gap: 13px;
+    padding: 0 0 29px;
+    margin-bottom: 29px;
+    border-bottom: 1px solid var(--line);
+    min-width: 0;
+    align-items: center;
+  }
+  .timeline-item:last-child { border-bottom: 0; margin-bottom: 0; padding-bottom: 0; }
+  .timeline-item::before { display: none; }
+  .timeline-item .timeline-icon { grid-area: icon; width: 54px; height: 54px; box-shadow: none; }
+  .timeline-item .timeline-time { grid-area: time; text-align: left; padding: 0; min-width: 0; }
+  .timeline-item .timeline-content { grid-area: content; padding: 0; min-width: 0; width: 100%; }
+  .timeline-item .timeline-content b { font-size: 11px; letter-spacing: .15em; margin-bottom: 5px; }
+  .timeline-item .timeline-content span { display: block; font-size: 19px; line-height: 1.45; overflow-wrap: break-word; }
+  .timeline-item time { font-size: 26px; white-space: normal; }
+  .hero { overflow: visible; background: var(--paper); }
+  .hero-image { display: block; width: 100%; height: auto; }
+  .hero-overlay { pointer-events: none; }
+  .hero-countdown { position: relative; left: auto; bottom: auto; transform: none; width: calc(100% - 32px); max-width: 510px; margin: 12px auto 0; padding: 16px 10px; }
+  .scroll { position: relative; left: auto; bottom: auto; transform: none; width: fit-content; margin: 18px auto 0; padding-bottom: 12px; }
+  .scroll-line { height: 18px; }
+  .countdown-grid strong { font-size: clamp(23px, 6vw, 31px); }
+  .place-copy h2 { font-size: clamp(43px, 10vw, 60px); }
+  .stay-email { white-space: normal; overflow-wrap: anywhere; }
+  .bank b { overflow-wrap: anywhere; }
+}
+@media (max-width: 430px) {
+  .section { padding: 75px 6vw; }
+  .timeline-item { grid-template-columns: 54px minmax(0, 1fr); column-gap: 15px; }
+  .timeline-item .timeline-content span { font-size: 18px; }
+  .hero-countdown { width: calc(100% - 24px); }
+  .countdown-grid span { letter-spacing: .07em; font-size: 7px; }
+}
