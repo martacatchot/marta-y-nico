@@ -1,41 +1,252 @@
 <!doctype html>
 <html lang="es">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Marta & Nico · 16.10.2027</title>
 <meta name="description" content="Marta & Nico · 16 de octubre de 2027 · Binissaida, Menorca">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header class="header">
-  <a class="logo" href="#inicio">M <span>|</span> N</a>
+  <a class="logo" href="#inicio" aria-label="Marta y Nico">M <span>·</span> N</a>
   <nav class="nav" aria-label="Navegación">
-    <a href="#dia">EL GRAN DÍA</a><a href="#lugar">EL LUGAR</a><a href="#info">INFORMACIÓN ÚTIL</a><a href="#rsvp">CONFIRMAR ASISTENCIA</a>
+    <a href="#dia">EL GRAN DÍA</a>
+    <a href="#lugar">EL LUGAR</a>
+    <a href="#alojamiento">ALOJAMIENTO</a>
+    <a href="#info">INFORMACIÓN ÚTIL</a>
+    <a class="nav-rsvp" href="#rsvp">CONFIRMAR ASISTENCIA</a>
   </nav>
-  <button class="hamb" aria-label="Abrir menú" aria-expanded="false">☰</button>
+  <button class="hamb" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button>
 </header>
+
 <main>
 <section class="hero" id="inicio">
-  <img class="hero-image" src="assets/hero-final.png" alt="Ilustración de Sant Joan de Binissaida, con Marta & Nico y la fecha de la boda">
+  <img class="hero-image" src="assets/hero-final.png" alt="Ilustración de Sant Joan de Binissaida, con Marta y Nico y la fecha de la boda">
+  <div class="hero-overlay"></div>
   <div class="hero-countdown" aria-live="polite">
-    <div class="countdown-title">FALTAN</div>
-    <div class="countdown-grid"><div><strong id="days">—</strong><span>DÍAS</span></div><div><strong id="hours">—</strong><span>HORAS</span></div><div><strong id="minutes">—</strong><span>MINUTOS</span></div><div><strong id="seconds">—</strong><span>SEGUNDOS</span></div></div>
+    <div class="countdown-kicker">FALTAN</div>
+    <div class="countdown-grid">
+      <div><strong id="days">—</strong><span>DÍAS</span></div>
+      <div><strong id="hours">—</strong><span>HORAS</span></div>
+      <div><strong id="minutes">—</strong><span>MINUTOS</span></div>
+      <div><strong id="seconds">—</strong><span>SEGUNDOS</span></div>
+    </div>
   </div>
-  <a class="scroll" href="#dia">DESLIZA PARA DESCUBRIR <span>↓</span></a>
+  <a class="scroll" href="#dia"><span class="scroll-line"></span><span>DESCUBRE EL DÍA</span></a>
 </section>
-<section class="section" id="dia"><div class="heading"><small>01</small><h2>El gran día</h2><p>Un día para celebrar, disfrutar y estar juntos.</p></div>
-<div class="timeline"><div><time>13:00</time><b>Ceremonia</b></div><div><time>14:00</time><b>Comida</b><span class="timeline-note">Estaciones para disfrutar sin prisas</span></div><div><time>Después</time><b>Fiesta</b><span class="timeline-note">Hasta que el cuerpo aguante</span></div><div><time>23:00</time><b>Hasta aquí nos dejan bailar</b></div></div></section>
-<section class="section place" id="lugar"><div class="heading"><small>02</small><h2>El lugar</h2><p>Binissaida · Menorca</p></div><div class="place-card"><p>Un rincón de Menorca que hemos elegido para compartir este día con vosotros.</p><a href="https://binissaida.com/" target="_blank" rel="noopener">DESCUBRE BINISSAIDA ↗</a></div></section>
-<section class="section" id="info"><div class="heading"><small>03</small><h2>Información útil</h2></div><div class="cards"><article><small>01</small><h3>Venid guapísimos</h3><p>Queremos veros bien guapos y preparados para celebrar. Elegantes, cómodos y vosotros mismos.</p><p><strong>Eso sí: evitad todos los tonos de blanco.</strong> 🤍</p></article><article><small>02</small><h3>Vuestro mejor regalo</h3><p>El mejor regalo es compartir este día con vosotros.</p><p>Pero si queréis hacernos un detalle, aceptamos billetitos o transferencia.</p><div class="bank"><span>Marta</span><b>ES43 0182 5326 0602 0194 2701</b><span>Nico</span><b>ES98 2100 0840 4102 0117 7812</b></div></article></div></section>
-<section class="section rsvp" id="rsvp"><div class="rsvp-box"><div class="heading"><small>04</small><h2>¿Nos acompañas?</h2><p>Nos hace muchísima ilusión compartir este día contigo.</p></div>
-<form action="https://formsubmit.co/martacatchot@gmail.com" method="POST"><input type="hidden" name="_subject" value="💌 Nueva confirmación · Marta & Nico"><input type="hidden" name="_captcha" value="false"><input type="hidden" name="_cc" value="nicotvidal19@gmail.com"><input type="hidden" name="_template" value="table"><input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
-<label>Nombre y apellidos<input name="Nombre" type="text" autocomplete="name" placeholder="Escribe tu nombre..." required></label>
-<fieldset><legend>¿Podrás acompañarnos?</legend><label class="choice"><input type="radio" name="Asistencia" value="Sí, allí estaré" required> Sí, allí estaré</label><label class="choice"><input type="radio" name="Asistencia" value="No podré acompañaros"> No podré acompañarnos</label></fieldset>
-<div id="special" hidden><label>¿Tienes alguna intolerancia o necesitas un menú especial?<textarea name="Intolerancias o menú especial" rows="4" placeholder="Cuéntanoslo aquí..."></textarea></label></div>
-<button type="submit">CONFIRMAR ASISTENCIA</button></form></div></section>
+
+<section class="section day-section" id="dia">
+  <div class="heading">
+    <div class="eyebrow"><span>01</span><i></i></div>
+    <h2>El gran día</h2>
+    <p>Un día para celebrar, disfrutar y estar juntos.</p>
+  </div>
+  <div class="timeline">
+    <article class="timeline-item">
+      <div class="timeline-icon" aria-hidden="true">
+        <svg class="rings-icon" viewBox="0 0 40 32" role="img" aria-label="Dos alianzas unidas">
+          <circle cx="14" cy="18" r="9.2" />
+          <circle cx="25" cy="14" r="9.2" />
+        </svg>
+      </div>
+      <div class="timeline-time"><time>13:00</time></div>
+      <div class="timeline-content"><b>Ceremonia</b><span>Empezamos nuestro día juntos</span></div>
+    </article>
+    <article class="timeline-item">
+      <div class="timeline-icon" aria-hidden="true">
+        <svg class="timeline-art meal-art" viewBox="0 0 64 64">
+          <path d="M12 39h40c-1.8 8.8-9.3 14-20 14S13.8 47.8 12 39Z" />
+          <path d="M18 34c1.5-10.2 7.2-16 14-16s12.5 5.8 14 16H18Z" />
+          <path d="M10 57h44M25 12c2-3 5-3 7 0M35 12c2-3 5-3 7 0" />
+          <path d="M22 34h20" />
+        </svg>
+      </div>
+      <div class="timeline-time"><time>14:00</time></div>
+      <div class="timeline-content"><b>Comida</b><span>Una celebración tipo cóctel, con diferentes estaciones para descubrir, probar y disfrutar juntos sin prisas.</span></div>
+    </article>
+    <article class="timeline-item">
+      <div class="timeline-icon" aria-hidden="true">
+        <svg class="timeline-art dance-art" viewBox="0 0 80 80" role="img" aria-label="Novios abrazados mientras bailan, con el vestido de la novia en movimiento">
+          <!-- Novia: rostro, recogido y velo al viento -->
+          <path d="M25 13c-1-5 3-8 8-7 5 1 7 6 4 10-2 3-6 4-10 1" />
+          <path d="M26 17c-3 3-4 7-2 10 2 3 6 4 9 1 3-2 3-6 1-9" />
+          <path d="M24 13c2-5 8-7 13-3M23 19c-5 4-7 10-5 16 1 4 4 7 7 9" />
+          <path d="M20 20c-7 6-10 15-7 24M18 25c-3 8-1 15 5 21" opacity=".65" />
+          <!-- Vestido amplio en giro -->
+          <path d="M25 30c-4 3-6 8-5 13l-10 22c10 7 25 8 37 1L34 43c1-5-1-10-5-13" />
+          <path d="M20 44c-5 5-9 12-12 21 12 7 28 7 42 0-4-9-9-16-16-21" />
+          <path d="M21 36l-8 7-6-3M33 36l8 5 7-5" />
+          <path d="M15 61c8 4 19 5 28 1" opacity=".6" />
+          <!-- Novio: cabeza, traje y postura de abrazo -->
+          <path d="M48 15c1-6 6-9 11-7 5 2 6 7 3 12-2 3-6 4-10 2" />
+          <path d="M49 19c-2 3-2 7 0 9 2 3 6 3 9 1 3-2 4-6 2-10" />
+          <path d="M48 13c3-5 9-7 14-3" />
+          <path d="M49 30c-5 2-8 7-8 13l-2 13 10 4 8-13 8 13 9-5-7-14c-2-6-7-10-12-11" />
+          <path d="m50 31 7 9 5-9M57 40l-1 18M47 35l5 8-4 5" />
+          <path d="M49 59l-2 13M67 59l3 13M44 72h9M67 72h7" />
+          <!-- Abrazo y manos unidas -->
+          <path d="M39 39c4-3 7-5 11-5M42 44c4 1 7 0 10-3M34 39c3 2 5 4 7 5" />
+          <path d="m54 32 3 5 3-5M55 38l2 2 2-2" />
+          <!-- Pequeños destellos románticos -->
+          <path d="m7 11 2-3 2 3 3 2-3 2-2 3-2-3-3-2 3-2ZM70 12l1.5-3 1.5 3 3 1.5-3 1.5-1.5 3-1.5-3-3-1.5 3-1.5Z" />
+        </svg>
+      </div>
+      <div class="timeline-time"><time>Después</time></div>
+      <div class="timeline-content"><b>Fiesta</b><span>Hasta que el cuerpo aguante</span></div>
+    </article>
+    <article class="timeline-item">
+      <div class="timeline-icon" aria-hidden="true">
+        <svg class="timeline-art night-art" viewBox="0 0 64 64">
+          <path d="M42 10c-9 4-14 14-11 24 3 11 14 17 25 13-4 7-12 11-21 9-13-3-21-16-18-29 2-10 12-18 25-17Z" />
+          <path d="m13 13 2-4 2 4 4 2-4 2-2 4-2-4-4-2 4-2ZM47 8l1.5-3L50 8l3 1.5-3 1.5-1.5 3-1.5-3-3-1.5L47 8ZM12 39l1.5-3 1.5 3 3 1.5-3 1.5-1.5 3-1.5-3-3-1.5 3-1.5Z" />
+        </svg>
+      </div>
+      <div class="timeline-time"><time>23:00</time></div>
+      <div class="timeline-content"><b>Hasta aquí nos dejan bailar</b><span>El último baile de la noche</span></div>
+    </article>
+  </div>
+</section>
+
+<section class="section place-section" id="lugar">
+  <div class="place-postcard">
+    <div class="place-copy">
+      <div class="eyebrow"><span>02</span><i></i></div>
+      <p class="place-kicker">BINISSAIDA · MENORCA</p>
+      <h2>El lugar</h2>
+      <p class="place-lead">Un rincón de Menorca que hemos elegido para compartir este día con vosotros.</p>
+      <div class="place-detail"><span>DONDE</span><b>Sant Joan de Binissaida</b></div>
+      <a class="outline-link" href="https://binissaida.com/" target="_blank" rel="noopener">DESCUBRIR BINISSAIDA <span>↗</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="section stay-section" id="alojamiento">
+  <div class="stay-wrap">
+    <div class="heading">
+      <div class="eyebrow"><span>03</span><i></i></div>
+      <p class="stay-kicker">UNA OPCIÓN PARA QUEDAROS EN MENORCA</p>
+      <h2>Dónde alojarse</h2>
+      <p>Hemos llegado a un acuerdo con Royal Life para que, si os apetece quedaros en la isla, podáis disfrutar de unas condiciones especiales con motivo de nuestra boda.</p>
+    </div>
+
+    <div class="stay-card">
+      <div class="stay-intro">
+        <span class="stay-label">ALOJAMIENTO · MENORCA</span>
+        <h3>Royal Life</h3>
+        <p>Apartamentos para disfrutar de Menorca a vuestro ritmo.</p>
+        <a class="outline-link" href="https://royal-life.es/es/" target="_blank" rel="noopener">DESCUBRIR EL HOTEL <span>↗</span></a>
+      </div>
+      <div class="stay-rates">
+        <div class="stay-subtitle">TARIFAS POR APARTAMENTO Y NOCHE</div>
+        <div class="rate-row"><span>1 persona</span><strong>95 € <small>/ noche</small></strong></div>
+        <div class="rate-row"><span>2 personas</span><strong>102 € <small>/ noche</small></strong></div>
+        <div class="rate-row"><span>3 personas</span><strong>132 € <small>/ noche</small></strong></div>
+        <p class="stay-note">Los menores de 2 años se alojan gratis. Capacidad máxima: 3 personas por apartamento.</p>
+      </div>
+      <div class="stay-details">
+        <div class="stay-detail">
+          <span class="detail-symbol">✧</span>
+          <h4>Qué incluye</h4>
+          <p>Precios en régimen de solo alojamiento. No incluyen el impuesto turístico de las Islas Baleares, de 2,20 € por persona y noche.</p>
+        </div>
+        <div class="stay-detail">
+          <span class="detail-symbol">↺</span>
+          <h4>Cancelación flexible</h4>
+          <p>Cancelación gratuita hasta 14 días antes de la llegada. Fuera de ese plazo se cobrará la primera noche. Si se cancela durante los 7 días previos a la llegada, se cobrará el importe total de la reserva.</p>
+        </div>
+        <div class="stay-detail">
+          <span class="detail-symbol">♡</span>
+          <h4>Pago y garantía</h4>
+          <p>Para garantizar la reserva, el hotel solicitará el número de una tarjeta y su fecha de caducidad. No se realizará ningún cobro por adelantado: podréis pagar a vuestra llegada.</p>
+        </div>
+      </div>
+      <div class="stay-booking">
+        <div>
+          <span class="stay-label">¿CÓMO RESERVAR?</span>
+          <p>Enviad un correo electrónico indicando en el asunto <strong>BODA MARTA Y NICO</strong>.</p>
+        </div>
+        <a class="stay-email" href="mailto:menorca@royal-life.es?subject=BODA%20MARTA%20Y%20NICO">menorca@royal-life.es <span>↗</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section info-section" id="info">
+  <div class="heading">
+    <div class="eyebrow"><span>04</span><i></i></div>
+    <h2>Información útil</h2>
+    <p>Un par de cosas que queremos contaros.</p>
+  </div>
+  <div class="cards">
+    <article class="info-card dress-card">
+      <div class="card-number">01</div>
+      <div class="card-icon" aria-hidden="true">✧</div>
+      <h3>Venid guapísimos</h3>
+      <p>Queremos veros bien guapos y preparados para celebrar. Elegantes, cómodos y vosotros mismos.</p>
+      <p class="accent-text">Eso sí… todos los tonos de blanco quedan reservados para la novia. 🤍</p>
+    </article>
+    <article class="info-card gift-card">
+      <div class="card-number">02</div>
+      <div class="card-icon" aria-hidden="true">♡</div>
+      <h3>Vuestro mejor regalo</h3>
+      <p>El mejor regalo es compartir este día con vosotros.</p>
+      <p>Pero si queréis hacernos un detalle, aceptamos billetitos o transferencia.</p>
+      <div class="banks">
+        <div class="bank">
+          <div><span>MARTA</span><b>ES43 0182 5326 0602 0194 2701</b></div>
+          <button type="button" class="copy-iban" data-iban="ES4301825326060201942701">COPIAR</button>
+        </div>
+        <div class="bank">
+          <div><span>NICO</span><b>ES98 2100 0840 4102 0117 7812</b></div>
+          <button type="button" class="copy-iban" data-iban="ES9821000840410201177812">COPIAR</button>
+        </div>
+      </div>
+      <small class="copy-note" aria-live="polite"></small>
+    </article>
+  </div>
+</section>
+
+<section class="section rsvp-section" id="rsvp">
+  <div class="rsvp-box">
+    <div class="heading">
+      <div class="eyebrow"><span>05</span><i></i></div>
+      <h2>¿Nos acompañas?</h2>
+      <p>Nos hace muchísima ilusión compartir este día contigo.</p>
+    </div>
+    <form action="https://formsubmit.co/martacatchot@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="💌 Nueva confirmación · Marta & Nico">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_cc" value="nicotvidal19@gmail.com">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://martacatchot.github.io/marta-y-nico/gracias.html">
+      <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" class="honey">
+
+      <label>Nombre y apellidos<input name="Nombre" type="text" autocomplete="name" placeholder="Escribe tu nombre..." required></label>
+      <fieldset>
+        <legend>¿Podrás acompañarnos?</legend>
+        <label class="choice"><input type="radio" name="Asistencia" value="Sí, allí estaré" required><span>Sí, allí estaré</span></label>
+        <label class="choice"><input type="radio" name="Asistencia" value="No podré acompañaros"><span>No podré acompañaros</span></label>
+      </fieldset>
+      <div id="special" hidden>
+        <label>¿Tienes alguna intolerancia o necesitas un menú especial?<textarea name="Intolerancias o menú especial" rows="3" placeholder="Cuéntanoslo aquí..."></textarea></label>
+      </div>
+      <button class="submit-button" type="submit"><span>CONFIRMAR ASISTENCIA</span><b>♡</b></button>
+    </form>
+    <p class="privacy-note">Al enviar el formulario aceptas que tratemos tus datos para gestionar tu confirmación.</p>
+  </div>
+</section>
 </main>
-<footer><strong>Marta & Nico</strong><span>16 · 10 · 2027</span><a href="#inicio">↑</a></footer>
+
+<footer>
+  <div class="footer-ornament">✦</div>
+  <strong>Marta <em>&</em> Nico</strong>
+  <span>16 · 10 · 2027 · BINISSAIDA, MENORCA</span>
+  <a href="#inicio" aria-label="Volver arriba">↑</a>
+</footer>
 <script src="script.js"></script>
-</body></html>
+</body>
+</html>

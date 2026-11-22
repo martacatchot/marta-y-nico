@@ -1,23 +1,16 @@
-# Marta & Nico · Web de boda
+# Marta & Nico · 16.10.2027
 
-Versión actual con la portada ilustrada aprobada, sin fotografías adicionales del lugar.
+Versión 1.2 · Apartado de alojamiento Royal Life.
 
-- Portada con contador real.
-- El gran día (timing provisional).
-- El lugar: solo enlace a https://binissaida.com/
-- Información útil: dress code y regalo.
-- RSVP preparado para martacatchot@gmail.com y copia a nicotvidal19@gmail.com.
+- Diseño mediterráneo, editorial y romántico.
+- Portada con ilustración de Binissaida y cuenta atrás.
+- Timeline renovada.
+- Sección Binissaida más editorial.
+- Apartado de alojamiento con tarifas, condiciones, cancelación y contacto de Royal Life.
+- Información útil en tarjetas.
+- Botones para copiar los IBAN.
+- RSVP conectado a FormSubmit y redirección a gracias.html.
+- Menú móvil y cabecera dinámica.
+- Diseño responsive.
 
-## Publicación
-
-La web es estática y puede publicarse gratis en GitHub Pages, Netlify o Vercel.
-
-Antes de publicar, cambia el campo `_next` de `index.html` por la URL pública real de `gracias.html`. En el primer envío FormSubmit puede pedir confirmar el correo principal.
-
-## Datos bancarios
-
-Cuando queráis, sustituimos "Próximamente" por el IBAN y titulares.
-
-
-## Actualización visual
-La portada utiliza la última propuesta visual aprobada, adaptada como imagen de cabecera para mantener el diseño mientras el contador y el resto de elementos siguen siendo interactivos.
+Web: https://martacatchot.github.io/marta-y-nico/
